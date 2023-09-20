@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<style>
+    fieldset{
+            background-image:linear-gradient(180deg,rgb(135, 221, 243),rgb(214, 235, 237),rgb(163, 222, 226));
+            height:400px;
+            width:300px;
+        }
+        .log{
+            padding:50px;
+            margin:50px;
+        }
+        form input,form textarea,form label{
+    display:block;
+    margin:10px;
+    padding:10px;
+    text-align: left;
+    border-radius: 5px;
+    height:20px;
+    width:300px;
+        }
+        body{
+            background-image: linear-gradient(180deg,rgb(249, 226, 241),rgb(232, 253, 229),rgb(240, 239, 203));;
+        }
+        button{
+            height:25px;
+            width:75px;
+            background-color: pink;
+            color:black;
+            font-weight: bold;
+        }
+       
+</style>
+<body>
+    <center>
+        <div class="log">
+        <form action="" method="POST">
+            <h1>Medisphere</h1>
+            <fieldset>
+
+            <label name="Name">Name:</label>
+            <input type="text" placeholder="enter your name here" name="Name"><br>
+            <label name="name">Email:</label>
+            <input type="email" placeholder="enter your email here" name="Email"><br>
+            <label fname="name">Password:</label>
+            <input type="text" placeholder="enter your Password here" name="password">
+            <button>Login</button>
+        </fieldset>
+        </form>
+        </div>
+        
+    </center>
+</body>
+</html>
