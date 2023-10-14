@@ -13,9 +13,9 @@ Author URL: http://w3layouts.com
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1 --bs-pink: #d63384;
+  --bs-blue: #80c0d7;
+  --bs-indigo: #5a8fb5;
+  --bs-white: hsl(0, 11%, 42%);
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
