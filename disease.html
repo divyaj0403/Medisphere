@@ -43,43 +43,116 @@
     <h1>PATIENT DETAILS</h1><br>
     <br>
     <br>
+    <form action="/predict" method="POST" ">
     <div class="container">
         <div class="container">
             <div class="column">
-                <label for="input1">FEVER:</label>
+                <label for="input1">DISEASE_Heart attack:</label>
                 <select id="input1">
                     <option value="0">Select an option</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
+                    <option value="1">TRUE</option>
+                    <option value="2">FALSE</option>
                 </select>
             </div><br>
             <div class="container">
                 <div class="column">
-                    <label for="input1">COUGH:</label>
+                    <label for="input1">DISEASE_Stroke:</label>
                     <select id="input1">
                         <option value="0">Select an option</option>
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
+                        <option value="1">TRUE</option>
+                        <option value="2">FALSE</option>
+                    </select>
+                </div><br>
+                <div class="container">
+                    <div class="column">
+                        <label for="input1">DISEASE_Skin disease:</label>
+                        <select id="input1">
+                            <option value="0">Select an option</option>
+                            <option value="1">TRUE</option>
+                            <option value="2">FALSE</option>
+                        </select>
+                    </div><br>
+                    <div class="container">
+                        <div class="column">
+                            <label for="input1">DISEASE_Heart attack:</label>
+                            <select id="input1">
+                                <option value="0">Select an option</option>
+                                <option value="1">TRUE</option>
+                                <option value="2">FALSE</option>
+                            </select>
+                        </div><br>
+                        <div class="container">
+                            <div class="column">
+                                <label for="input1">DISEASE_Skin Disease:</label>
+                                <select id="input1">
+                                    <option value="0">Select an option</option>
+                                    <option value="1">TRUE</option>
+                                    <option value="2">FALSE</option>
+                                </select>
+                            </div><br>
+                            <div class="container">
+                                <div class="column">
+                                    <label for="input1">DISEASE_Lung Cancer:</label>
+                                    <select id="input1">
+                                        <option value="0">Select an option</option>
+                                        <option value="1">TRUE</option>
+                                        <option value="2">FALSE</option>
+                                    </select>
+                                </div><br>
+                                <div class="container">
+                                    <div class="column">
+                                        <label for="input1">DISEASE_Liver diesase:</label>
+                                        <select id="input1">
+                                            <option value="0">Select an option</option>
+                                            <option value="1">TRUE</option>
+                                            <option value="2">FALSE</option>
+                                        </select>
+                                    </div><br>
+                                    <div class="container">
+                                        <div class="column">
+                                            <label for="input1">DISEASE_Leukaemia:</label>
+                                            <select id="input1">
+                                                <option value="0">Select an option</option>
+                                                <option value="1">TRUE</option>
+                                                <option value="2">FALSE</option>
+                                            </select>
+                                        </div><br>
+                                        <div class="container">
+                                            <div class="column">
+                                                <label for="input1">DISEASE_Kideny Stone:</label>
+                                                <select id="input1">
+                                                    <option value="0">Select an option</option>
+                                                    <option value="1">TRUE</option>
+                                                    <option value="2">FALSE</option>
+                                                </select>
+                                            </div><br>
+            <div class="container">
+                <div class="column">
+                    <label for="input1">DISEASE_Daibetes:</label>
+                    <select id="input1">
+                        <option value="0">Select an option</option>
+                        <option value="1">TRUE</option>
+                        <option value="2">FALSE</option>
 
                     </select>
                 </div><br>
                 <div class="container">
                     <div class="column">
-                        <label for="input1">FATIGUE:</label>
+                        <label for="input1">Cervical Cancer:</label>
                         <select id="input1">
                             <option value="0">Select an option</option>
-                            <option value="1">Yes</option>
-                            <option value="2">No</option>
+                            <option value="1">TRUE</option>
+                            <option value="2">FALSE</option>
 
                         </select>
                     </div><br>
                     <div class="container">
                         <div class="column">
-                            <label for="input1">BREATHING DIFFICULTY:</label>
+                            <label for="input1">FAMILY HISTORY(YES=1/NO=0):</label>
                             <select id="input1">
                                 <option value="0">Select an option</option>
-                                <option value="1">Yes</option>
-                                <option value="2">No</option>
+                                <option value="1">1</option>
+                                <option value="2">0</option>
 
                             </select>
                         </div><br>
@@ -90,38 +163,39 @@
                             </div><br>
                             <div class="container">
                                 <div class="column">
-                                    <label for="input1">GENDER:</label>
+                                    <label for="input1">GENDER(m=1/f=0):</label>
                                     <select id="input1">
                                         <option value="0">Select an option</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
+                                        <option value="1">1</option>
+                                        <option value="2">0</option>
 
                                     </select>
                                 </div><br>
                                 <div class="container">
                                     <div class="column">
-                                        <label for="input1">BLOOD PRESSURE:</label>
+                                        <label for="input1">ALCOHOL:</label>
                                         <select id="input1">
                                             <option value="0">Select an option</option>
-                                            <option value="1">Low</option>
-                                            <option value="2">Normal</option>
-                                            <option value="3">High</option>
+                                            <option value="1">1</option>
+                                            <option value="2">0</option>
+                                          
                                         </select>
                                     </div><br>
                                     <div class="container">
                                         <div class="column">
-                                            <label for="input1">CHOLESTROL:</label>
+                                            <label for="input1">SMOKING:</label>
                                             <select id="input1">
                                                 <option value="0">Select an option</option>
-                                                <option value="1">Low</option>
-                                                <option value="2">Normal</option>
-                                                <option value="3">High</option>
+                                                <option value="1">1</option>
+                                                <option value="2">0</option>
+                                                
                                             </select>
                                         </div><br>
 
                                     </div><br><br>
 
                                     <button onclick="processInputs()">ANALYSE DETAILS</button>
+                                </form>
 
                                     <script>
                                         function processInputs() {
