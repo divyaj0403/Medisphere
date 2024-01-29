@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #2a1659;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1a1039;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1a1039;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        select {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        #userInputsForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4d0080;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #330066;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Healthcare Website</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>About Us</h2>
+        <p>Introduction text goes here...</p>
+    </section>
+
+    <section id="userInputs">
+        <h2>User Inputs</h2>
+        <form id="userInputsForm">
+            <label for="input1">Input 1:</label>
+            <select id="input1" name="input1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <label for="input2">Input 2:</label>
+            <select id="input2" name="input2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <label for="input3">Input 3:</label>
+            <select id="input3" name="input3">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <label for="input4">Input 4:</label>
+            <select id="input4" name="input4">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <label for="input5">Input 5:</label>
+            <select id="input5" name="input5">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <label for="input5">Input 5:</label>
+            <select id="input5" name="input5">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 Healthcare Website</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            // Add logic for handling form submission
+            alert('Form submitted!');
+        }
+    </script>
+
+</body>
+</html>
