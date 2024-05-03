@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the hospital recommendation dataset CSV
-doctor_data = pd.read_csv('doctor_data.csv')
+doctor_data = pd.read_csv('doctor/doctor_data.csv')
 
 def recommend_hospital(patient_location, patient_specialty):
     try:
