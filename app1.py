@@ -14,10 +14,23 @@ selected = st.sidebar.selectbox('Multiple Disease Prediction System',
                                   "Parkinson's Prediction"])
 
 # Load saved models
-working_dir = os.path.dirname(os.path.abspath(__file__))
-diabetes_model = pickle.load(open(f'saved_models/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open(f'saved_models/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open(f'saved_models/parkinsons_model.sav', 'rb'))
+import os
+import pickle
+
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Load the diabetes model
+diabetes_model_path = os.path.join(current_dir, 'saved_models', 'diabetes_model.sav')
+diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
+
+# Load the heart disease model
+heart_disease_model_path = os.path.join(current_dir, 'saved_models', 'heart_disease_model.sav')
+heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
+
+# Load the Parkinson's model
+parkinsons_model_path = os.path.join(current_dir, 'saved_models', 'parkinsons_model.sav')
+parkinsons_model = pickle.load(open(parkinsons_model_path, 'rb'))
 
 # Function to predict diabetes
 def predict_diabetes():
